@@ -133,13 +133,6 @@
           <id>dare2</id>
           <layout>var dare2: INT;</layout>
         </var>
-        <var id="ID1413155474">
-          <type>
-            <id>Ten0</id>
-          </type>
-          <id>s</id>
-          <layout>var s: Ten0;</layout>
-        </var>
         <color id="ID1413190688">
           <id>TRAIN_STATION</id>
           <timed/>
@@ -149,6 +142,28 @@
           </product>
           <layout>colset TRAIN_STATION = product T * S timed;</layout>
         </color>
+        <color id="ID1416892297">
+          <id>TRAIN_PASSENGER</id>
+          <product>
+            <id>T</id>
+            <id>C</id>
+          </product>
+          <layout>colset TRAIN_PASSENGER = product T * C;</layout>
+        </color>
+        <var id="ID1417250197">
+          <type>
+            <id>TRAIN_PASSENGER</id>
+          </type>
+          <id>train_passenger</id>
+          <layout>var train_passenger : TRAIN_PASSENGER;</layout>
+        </var>
+        <var id="ID1413155474">
+          <type>
+            <id>Ten0</id>
+          </type>
+          <id>s</id>
+          <layout>var s: Ten0;</layout>
+        </var>
         <var id="ID1414008161">
           <type>
             <id>TRAIN_STATION</id>
@@ -677,58 +692,6 @@ TO THE NEXT STATION</text>
                 version="4.0.1"/>
         </initmark>
       </place>
-      <place id="ID1413772766">
-        <posattr x="1638.000000"
-                 y="-168.000000"/>
-        <fillattr colour="White"
-                  pattern=""
-                  filled="false"/>
-        <lineattr colour="Black"
-                  thick="1"
-                  type="Solid"/>
-        <textattr colour="Black"
-                  bold="false"/>
-        <text>dsdas</text>
-        <ellipse w="60.000000"
-                 h="40.000000"/>
-        <token x="-10.000000"
-               y="0.000000"/>
-        <marking x="0.000000"
-                 y="0.000000"
-                 hidden="false">
-          <snap snap_id="0"
-                anchor.horizontal="0"
-                anchor.vertical="0"/>
-        </marking>
-        <type id="ID1413772767">
-          <posattr x="1672.500000"
-                   y="-191.000000"/>
-          <fillattr colour="White"
-                    pattern="Solid"
-                    filled="false"/>
-          <lineattr colour="Black"
-                    thick="0"
-                    type="Solid"/>
-          <textattr colour="Black"
-                    bold="false"/>
-          <text tool="CPN Tools"
-                version="4.0.1">INT</text>
-        </type>
-        <initmark id="ID1413968335">
-          <posattr x="1758.000000"
-                   y="-144.000000"/>
-          <fillattr colour="White"
-                    pattern="Solid"
-                    filled="false"/>
-          <lineattr colour="Black"
-                    thick="0"
-                    type="Solid"/>
-          <textattr colour="Black"
-                    bold="false"/>
-          <text tool="CPN Tools"
-                version="4.0.1">1`1++1`2++1`3++1`4++1`5</text>
-        </initmark>
-      </place>
       <place id="ID1414258968">
         <posattr x="-462.000000"
                  y="-462.000000"/>
@@ -954,8 +917,8 @@ ON THE STATION</text>
         <text></text>
         <ellipse w="60.000000"
                  h="40.000000"/>
-        <token x="-10.000000"
-               y="0.000000"/>
+        <token x="-50.000000"
+               y="-32.000000"/>
         <marking x="-1.000000"
                  y="0.000000"
                  hidden="false">
@@ -964,7 +927,7 @@ ON THE STATION</text>
                 anchor.vertical="3"/>
         </marking>
         <type id="ID1415701544">
-          <posattr x="1464.000000"
+          <posattr x="1501.500000"
                    y="-544.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -975,7 +938,7 @@ ON THE STATION</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">TSC</text>
+                version="4.0.1">TRAIN_STATION</text>
         </type>
         <initmark id="ID1415701545">
           <posattr x="1484.000000"
@@ -1044,6 +1007,111 @@ CYCLE</text>
                     bold="false"/>
           <text tool="CPN Tools"
                 version="4.0.1">true</text>
+        </initmark>
+      </place>
+      <place id="ID1416761802">
+        <posattr x="1697.000000"
+                 y="-70.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>WAITING
+PASSENGERS</text>
+        <ellipse w="108.000000"
+                 h="86.000000"/>
+        <token x="-13.000000"
+               y="0.000000"/>
+        <marking x="0.000000"
+                 y="0.000000"
+                 hidden="false">
+          <snap snap_id="0"
+                anchor.horizontal="0"
+                anchor.vertical="0"/>
+        </marking>
+        <type id="ID1416761803">
+          <posattr x="1775.000000"
+                   y="-110.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1">PASSENGER</text>
+        </type>
+        <initmark id="ID1416761804">
+          <posattr x="1826.500000"
+                   y="-29.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1">3`(N,1)++4`(N,2)++4`(N,3)</text>
+        </initmark>
+      </place>
+      <place id="ID1417439705">
+        <posattr x="1697.000000"
+                 y="-786.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text></text>
+        <ellipse w="60.000000"
+                 h="40.000000"/>
+        <token x="-10.000000"
+               y="0.000000"/>
+        <marking x="0.000000"
+                 y="0.000000"
+                 hidden="false">
+          <snap snap_id="0"
+                anchor.horizontal="0"
+                anchor.vertical="0"/>
+        </marking>
+        <type id="ID1417439706">
+          <posattr x="1780.500000"
+                   y="-809.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1">TRAIN_PASSENGER</text>
+        </type>
+        <initmark id="ID1417439707">
+          <posattr x="1753.000000"
+                   y="-762.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1"/>
         </initmark>
       </place>
       <trans id="ID1413134772"
@@ -1502,7 +1570,7 @@ THIRD STATION</text>
       </trans>
       <trans id="ID1413766658"
              explicit="false">
-        <posattr x="1741.000000"
+        <posattr x="1697.000000"
                  y="-521.000000"/>
         <fillattr colour="White"
                   pattern=""
@@ -1515,10 +1583,10 @@ THIRD STATION</text>
         <text>dare</text>
         <box w="172.000000"
              h="240.000000"/>
-        <binding x="27.200000"
-                 y="72.000000"/>
-        <cond id="ID1414890092">
-          <posattr x="1628.000000"
+        <binding x="427.200000"
+                 y="-215.000000"/>
+        <cond id="ID1417411578">
+          <posattr x="1602.000000"
                    y="-390.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -1529,10 +1597,10 @@ THIRD STATION</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">[cnt&lt;3]</text>
+                version="4.0.1"/>
         </cond>
         <time id="ID1414444571">
-          <posattr x="1841.500000"
+          <posattr x="1797.500000"
                    y="-390.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -1546,7 +1614,7 @@ THIRD STATION</text>
                 version="4.0.1"/>
         </time>
         <code id="ID1413766661">
-          <posattr x="1861.500000"
+          <posattr x="1817.500000"
                    y="-673.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -1560,7 +1628,7 @@ THIRD STATION</text>
                 version="4.0.1"/>
         </code>
         <priority id="ID1413766663">
-          <posattr x="1617.000000"
+          <posattr x="1573.000000"
                    y="-652.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -1662,12 +1730,12 @@ THIRD STATION</text>
                   bold="false"/>
         <text></text>
         <box w="156.000000"
-             h="54.000000"/>
+             h="74.000000"/>
         <binding x="7.200000"
                  y="-3.000000"/>
         <cond id="ID1414939151">
           <posattr x="1047.000000"
-                   y="-340.000000"/>
+                   y="-330.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -1681,7 +1749,7 @@ THIRD STATION</text>
         </cond>
         <time id="ID1415386174">
           <posattr x="1230.500000"
-                   y="-340.000000"/>
+                   y="-330.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -1695,7 +1763,7 @@ THIRD STATION</text>
         </time>
         <code id="ID1415078865">
           <posattr x="1246.500000"
-                   y="-437.000000"/>
+                   y="-447.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -1709,7 +1777,7 @@ THIRD STATION</text>
         </code>
         <priority id="ID1414939155">
           <posattr x="1018.000000"
-                   y="-416.000000"/>
+                   y="-426.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -2520,38 +2588,6 @@ THIRD STATION</text>
                 version="4.0.1">(train,3)</text>
         </annot>
       </arc>
-      <arc id="ID1414015766"
-           orientation="PtoT"
-           order="1">
-        <posattr x="0.000000"
-                 y="0.000000"/>
-        <fillattr colour="White"
-                  pattern=""
-                  filled="false"/>
-        <lineattr colour="Black"
-                  thick="1"
-                  type="Solid"/>
-        <textattr colour="Black"
-                  bold="false"/>
-        <arrowattr headsize="1.200000"
-                   currentcyckle="2"/>
-        <transend idref="ID1413766658"/>
-        <placeend idref="ID1413772766"/>
-        <annot id="ID1414015767">
-          <posattr x="1697.500000"
-                   y="-288.000000"/>
-          <fillattr colour="White"
-                    pattern="Solid"
-                    filled="false"/>
-          <lineattr colour="Black"
-                    thick="0"
-                    type="Solid"/>
-          <textattr colour="Black"
-                    bold="false"/>
-          <text tool="CPN Tools"
-                version="4.0.1">dare2</text>
-        </annot>
-      </arc>
       <arc id="ID1414275296"
            orientation="TtoP"
            order="1">
@@ -2698,8 +2734,8 @@ THIRD STATION</text>
         <transend idref="ID1414939150"/>
         <placeend idref="ID1414411164"/>
         <annot id="ID1415204054">
-          <posattr x="1175.000000"
-                   y="-459.000000"/>
+          <posattr x="1176.000000"
+                   y="-463.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -2731,7 +2767,7 @@ THIRD STATION</text>
         <placeend idref="ID1415485985"/>
         <annot id="ID1415488625">
           <posattr x="1099.000000"
-                   y="-288.000000"/>
+                   y="-283.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -3095,7 +3131,7 @@ THIRD STATION</text>
         <transend idref="ID1415672041"/>
         <placeend idref="ID1415701543"/>
         <annot id="ID1415704427">
-          <posattr x="1460.000000"
+          <posattr x="1448.500000"
                    y="-461.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -3106,7 +3142,7 @@ THIRD STATION</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">(train_station,cnt)</text>
+                version="4.0.1">(train_station)</text>
         </annot>
       </arc>
       <arc id="ID1415707321"
@@ -3127,7 +3163,7 @@ THIRD STATION</text>
         <transend idref="ID1413766658"/>
         <placeend idref="ID1415701543"/>
         <annot id="ID1415707322">
-          <posattr x="1556.000000"
+          <posattr x="1534.000000"
                    y="-510.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -3138,7 +3174,7 @@ THIRD STATION</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">(train_station,cnt)</text>
+                version="4.0.1">(train,station)</text>
         </annot>
       </arc>
       <arc id="ID1416204847"
@@ -3397,6 +3433,70 @@ THIRD STATION</text>
                 version="4.0.1">permitter</text>
         </annot>
       </arc>
+      <arc id="ID1417140859"
+           orientation="PtoT"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1413766658"/>
+        <placeend idref="ID1416761802"/>
+        <annot id="ID1417140860">
+          <posattr x="1778.500000"
+                   y="-257.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1">(passengerType,station)</text>
+        </annot>
+      </arc>
+      <arc id="ID1417460922"
+           orientation="TtoP"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1413766658"/>
+        <placeend idref="ID1417439705"/>
+        <annot id="ID1417460923">
+          <posattr x="1771.000000"
+                   y="-698.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1">(train,passengerType)</text>
+        </annot>
+      </arc>
       <constraints/>
     </page>
     <instances>
@@ -3647,14 +3747,14 @@ THIRD STATION</text>
     </options>
     <binders>
       <cpnbinder id="ID2222"
-                 x="415"
-                 y="83"
+                 x="649"
+                 y="101"
                  width="1489"
                  height="870">
         <sheets>
           <cpnsheet id="ID2215"
-                    panx="-1564.000000"
-                    pany="-217.000000"
+                    panx="-1513.000000"
+                    pany="-498.000000"
                     zoom="1.000000"
                     instance="ID2149">
             <zorder>
@@ -3745,10 +3845,11 @@ THIRD STATION</text>
         <IndexNode expanded="true">
           <IndexNode expanded="true"/>
           <IndexNode expanded="true"/>
-          <IndexNode expanded="false"/>
           <IndexNode expanded="true"/>
           <IndexNode expanded="false"/>
           <IndexNode expanded="true"/>
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="true"/>
           <IndexNode expanded="true"/>
           <IndexNode expanded="false"/>
           <IndexNode expanded="true"/>
@@ -3767,7 +3868,9 @@ THIRD STATION</text>
           <IndexNode expanded="true"/>
           <IndexNode expanded="true"/>
           <IndexNode expanded="true"/>
-          <IndexNode expanded="false"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
           <IndexNode expanded="true"/>
           <IndexNode expanded="true"/>
           <IndexNode expanded="true"/>
