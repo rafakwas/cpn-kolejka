@@ -659,8 +659,8 @@ TO THE FIFTH STATION</text>
         </initmark>
       </place>
       <place id="ID1413188599">
-        <posattr x="546.000000"
-                 y="-756.000000"/>
+        <posattr x="798.000000"
+                 y="-924.000000"/>
         <fillattr colour="White"
                   pattern=""
                   filled="false"/>
@@ -682,8 +682,8 @@ TO THE FIFTH STATION</text>
                 anchor.vertical="1"/>
         </marking>
         <type id="ID1413188600">
-          <posattr x="621.500000"
-                   y="-823.634428"/>
+          <posattr x="873.500000"
+                   y="-991.634428"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -696,8 +696,8 @@ TO THE FIFTH STATION</text>
                 version="4.0.1">TRAIN_STATION</text>
         </type>
         <initmark id="ID1413188601">
-          <posattr x="637.000000"
-                   y="-704.000000"/>
+          <posattr x="889.000000"
+                   y="-872.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -1973,8 +1973,8 @@ STATION</text>
         <transend idref="ID1413766658"/>
         <placeend idref="ID1413188599"/>
         <annot id="ID1417878792">
-          <posattr x="934.000000"
-                   y="-745.000000"/>
+          <posattr x="1042.000000"
+                   y="-795.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -7071,12 +7071,12 @@ FIRST STATION</text>
           <boolean>true</boolean>
         </value>
       </option>
-      <option name="extensions.10002.enable">
+      <option name="extensions.10006.enable">
         <value>
           <boolean>true</boolean>
         </value>
       </option>
-      <option name="extensions.10006.enable">
+      <option name="extensions.10002.enable">
         <value>
           <boolean>true</boolean>
         </value>
@@ -7290,8 +7290,8 @@ FIRST STATION</text>
                     zoom="0.805664"
                     instance="ID2149">
             <zorder>
-              <position value="1"/>
               <position value="0"/>
+              <position value="1"/>
             </zorder>
           </cpnsheet>
           <cpnsheet id="ID1418404965"
@@ -7426,18 +7426,82 @@ FIRST STATION</text>
                     zoom="0.409600"
                     instance="ID2149">
             <zorder>
-              <position value="1"/>
               <position value="0"/>
+              <position value="1"/>
             </zorder>
           </cpnsheet>
           <cpnsheet id="ID1419155546"
-                    panx="-1465.140625"
-                    pany="-623.328125"
+                    panx="-1387.140625"
+                    pany="-597.328125"
                     zoom="1.000000"
                     instance="ID2149">
             <zorder>
-              <position value="1"/>
               <position value="0"/>
+              <position value="1"/>
+            </zorder>
+          </cpnsheet>
+          <cpnsheet id="ID1419249425"
+                    panx="-47.425000"
+                    pany="-273.575000"
+                    zoom="0.800000"
+                    instance="ID1418957860">
+            <zorder>
+              <position value="0"/>
+            </zorder>
+          </cpnsheet>
+          <cpnsheet id="ID1419250283"
+                    panx="-257.000000"
+                    pany="-557.000000"
+                    zoom="1.000000"
+                    instance="ID1418161312">
+            <zorder>
+              <position value="0"/>
+            </zorder>
+          </cpnsheet>
+          <cpnsheet id="ID1419251479"
+                    panx="143.000000"
+                    pany="-596.000000"
+                    zoom="1.000000"
+                    instance="ID1418169357">
+            <zorder>
+              <position value="0"/>
+            </zorder>
+          </cpnsheet>
+          <cpnsheet id="ID1419252471"
+                    panx="22.000000"
+                    pany="-687.000000"
+                    zoom="1.000000"
+                    instance="ID1418518297">
+            <zorder>
+              <position value="0"/>
+            </zorder>
+          </cpnsheet>
+          <cpnsheet id="ID1419254144"
+                    panx="-391.000000"
+                    pany="-716.000000"
+                    zoom="1.000000"
+                    instance="ID1418664028">
+            <zorder>
+              <position value="0"/>
+            </zorder>
+          </cpnsheet>
+          <cpnsheet id="ID1419257007"
+                    panx="-252.000000"
+                    pany="-1512.000000"
+                    zoom="1.000000"
+                    instance="ID1418856439">
+            <zorder>
+              <position value="0"/>
+            </zorder>
+          </cpnsheet>
+          <cpnsheet id="ID1419259538"
+                    panx="-357.387500"
+                    pany="-1139.937500"
+                    zoom="0.800000"
+                    instance="ID2149">
+            <zorder>
+              <position value="0"/>
+              <position value="1"/>
             </zorder>
           </cpnsheet>
         </sheets>
@@ -7459,6 +7523,13 @@ FIRST STATION</text>
           <position value="5"/>
           <position value="12"/>
           <position value="16"/>
+          <position value="17"/>
+          <position value="18"/>
+          <position value="19"/>
+          <position value="20"/>
+          <position value="21"/>
+          <position value="22"/>
+          <position value="23"/>
         </zorder>
       </cpnbinder>
     </binders>
