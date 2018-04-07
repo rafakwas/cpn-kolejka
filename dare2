@@ -1,0 +1,245 @@
+CPN Tools state space report for:
+/cygdrive/D/Studia/VIII semestr/metody formalne/cpn tools/test1/MFcz8_3.cpn
+Report generated: Sun Apr  8 01:15:12 2018
+
+
+ Statistics
+------------------------------------------------------------------------
+
+  State Space
+     Nodes:  25638
+     Arcs:   283145
+     Secs:   300
+     Status: Partial
+
+  Scc Graph
+     Nodes:  25638
+     Arcs:   151757
+     Secs:   3
+
+
+ Boundedness Properties
+------------------------------------------------------------------------
+
+  Best Integer Bounds
+                             Upper      Lower
+     New_Page'FREE_SEATS 1   30         24
+     New_Page'GENERATED_PASSENGER_TYPE 1
+                             9          0
+     New_Page'GENERATED_STATION 1
+                             5          0
+     New_Page'NUMBER_OF_GENERATED_PASSENGERS 1
+                             1          1
+     New_Page'PASSENGER_IN 1 1          0
+     New_Page'PASSENGER_IN_TRAIN 1
+                             6          0
+     New_Page'PASSENGER_OUT 1
+                             1          0
+     New_Page'PERMISSION_GIVER 1
+                             1          1
+     New_Page'RANDOM_NUMBER 1
+                             1          1
+     New_Page'TRAIN_ON_ITS_WAY_TO_THE_FIFTH_STATION 1
+                             1          0
+     New_Page'TRAIN_ON_ITS_WAY_TO_THE_FIRST_STATION 1
+                             1          0
+     New_Page'TRAIN_ON_ITS_WAY_TO_THE_FOURTH_STATION 1
+                             1          0
+     New_Page'TRAIN_ON_ITS_WAY_TO_THE_SECOND_STATION 1
+                             1          0
+     New_Page'TRAIN_ON_ITS_WAY_TO_THE_SIXTH_STATION 1
+                             0          0
+     New_Page'TRAIN_ON_ITS_WAY_TO_THE_THIRD_STATION 1
+                             1          0
+     New_Page'WAITING_PASSENGERS 1
+                             14         5
+     station_1'TRAIN_AT_THE_FIRST_STATION 1
+                             1          0
+     station_2'TRAIN_ON_THE_SECOND_STATION 1
+                             1          0
+     station_3'TRAIN_ON_THE_THIRD_STATION 1
+                             1          0
+     station_4'TRAIN_ON_THE_FOURTH_STATION 1
+                             1          0
+     station_5'TRAIN_ON_THE_FIFTH_STATION 1
+                             1          0
+     station_6'TRAIN_AT_THE_SIXTH_STATION 1
+                             0          0
+
+  Best Upper Multi-set Bounds
+     New_Page'FREE_SEATS 1
+                         30`SEAT
+     New_Page'GENERATED_PASSENGER_TYPE 1
+                         9`NONSECURED++
+9`SECURED
+     New_Page'GENERATED_STATION 1
+                         4`(1,NONSECURED)++
+4`(2,SECURED)++
+4`(3,NONSECURED)++
+4`(4,SECURED)++
+4`(5,NONSECURED)++
+5`(6,SECURED)
+     New_Page'NUMBER_OF_GENERATED_PASSENGERS 1
+                         1`0++
+1`1++
+1`2++
+1`3
+     New_Page'PASSENGER_IN 1
+                         1`(0,(1,NONSECURED))++
+1`(0,(2,SECURED))++
+1`(0,(3,NONSECURED))++
+1`(0,(4,SECURED))++
+1`(0,(5,NONSECURED))
+     New_Page'PASSENGER_IN_TRAIN 1
+                         4`(0,(1,NONSECURED))++
+4`(0,(3,NONSECURED))++
+1`(0,(4,SECURED))++
+2`(0,(5,NONSECURED))++
+4`(0,(6,SECURED))
+     New_Page'PASSENGER_OUT 1
+                         1`(0,(1,NONSECURED))++
+1`(0,(2,SECURED))++
+1`(0,(3,NONSECURED))++
+1`(0,(4,SECURED))++
+1`(0,(5,NONSECURED))
+     New_Page'PERMISSION_GIVER 1
+                         1`yes
+     New_Page'RANDOM_NUMBER 1
+                         1`7
+     New_Page'TRAIN_ON_ITS_WAY_TO_THE_FIFTH_STATION 1
+                         1`0
+     New_Page'TRAIN_ON_ITS_WAY_TO_THE_FIRST_STATION 1
+                         1`0
+     New_Page'TRAIN_ON_ITS_WAY_TO_THE_FOURTH_STATION 1
+                         1`0
+     New_Page'TRAIN_ON_ITS_WAY_TO_THE_SECOND_STATION 1
+                         1`0
+     New_Page'TRAIN_ON_ITS_WAY_TO_THE_SIXTH_STATION 1
+                         empty
+     New_Page'TRAIN_ON_ITS_WAY_TO_THE_THIRD_STATION 1
+                         1`0
+     New_Page'WAITING_PASSENGERS 1
+                         6`(NONSECURED,1,3)++
+3`(NONSECURED,1,5)++
+7`(NONSECURED,3,1)++
+3`(NONSECURED,3,5)++
+3`(NONSECURED,5,1)++
+3`(NONSECURED,5,3)++
+3`(SECURED,2,4)++
+7`(SECURED,2,6)++
+3`(SECURED,4,2)++
+3`(SECURED,4,6)++
+3`(SECURED,6,2)++
+3`(SECURED,6,4)
+     station_1'TRAIN_AT_THE_FIRST_STATION 1
+                         1`0
+     station_2'TRAIN_ON_THE_SECOND_STATION 1
+                         1`0
+     station_3'TRAIN_ON_THE_THIRD_STATION 1
+                         1`0
+     station_4'TRAIN_ON_THE_FOURTH_STATION 1
+                         1`0
+     station_5'TRAIN_ON_THE_FIFTH_STATION 1
+                         1`0
+     station_6'TRAIN_AT_THE_SIXTH_STATION 1
+                         empty
+
+  Best Lower Multi-set Bounds
+     New_Page'FREE_SEATS 1
+                         24`SEAT
+     New_Page'GENERATED_PASSENGER_TYPE 1
+                         empty
+     New_Page'GENERATED_STATION 1
+                         empty
+     New_Page'NUMBER_OF_GENERATED_PASSENGERS 1
+                         empty
+     New_Page'PASSENGER_IN 1
+                         empty
+     New_Page'PASSENGER_IN_TRAIN 1
+                         empty
+     New_Page'PASSENGER_OUT 1
+                         empty
+     New_Page'PERMISSION_GIVER 1
+                         1`yes
+     New_Page'RANDOM_NUMBER 1
+                         1`7
+     New_Page'TRAIN_ON_ITS_WAY_TO_THE_FIFTH_STATION 1
+                         empty
+     New_Page'TRAIN_ON_ITS_WAY_TO_THE_FIRST_STATION 1
+                         empty
+     New_Page'TRAIN_ON_ITS_WAY_TO_THE_FOURTH_STATION 1
+                         empty
+     New_Page'TRAIN_ON_ITS_WAY_TO_THE_SECOND_STATION 1
+                         empty
+     New_Page'TRAIN_ON_ITS_WAY_TO_THE_SIXTH_STATION 1
+                         empty
+     New_Page'TRAIN_ON_ITS_WAY_TO_THE_THIRD_STATION 1
+                         empty
+     New_Page'WAITING_PASSENGERS 1
+                         empty
+     station_1'TRAIN_AT_THE_FIRST_STATION 1
+                         empty
+     station_2'TRAIN_ON_THE_SECOND_STATION 1
+                         empty
+     station_3'TRAIN_ON_THE_THIRD_STATION 1
+                         empty
+     station_4'TRAIN_ON_THE_FOURTH_STATION 1
+                         empty
+     station_5'TRAIN_ON_THE_FIFTH_STATION 1
+                         empty
+     station_6'TRAIN_AT_THE_SIXTH_STATION 1
+                         empty
+
+
+ Home Properties
+------------------------------------------------------------------------
+
+  Home Markings
+     Initial Marking is not a home marking
+
+
+ Liveness Properties
+------------------------------------------------------------------------
+
+  Dead Markings
+     14689 [25638,25637,25636,25635,25634,...]
+
+  Dead Transition Instances
+     New_Page'PERMISSION_DENIER 1
+     station_5'TRAIN_LEAVES_FIFTH_STATION 1
+     station_6'ARRIVAL_AT_THE_SIXTH_STATION 1
+     station_6'DEPARTURE_SIXTH_STATION 1
+
+  Live Transition Instances
+     None
+
+
+ Fairness Properties
+------------------------------------------------------------------------
+
+  Impartial Transition Instances
+     New_Page'GENERATOR 1
+
+  Fair Transition Instances
+     New_Page'PERMISSION_DENIER 1
+     station_5'TRAIN_LEAVES_FIFTH_STATION 1
+     station_6'ARRIVAL_AT_THE_SIXTH_STATION 1
+     station_6'DEPARTURE_SIXTH_STATION 1
+
+  Just Transition Instances
+     None
+
+  Transition Instances with No Fairness
+     New_Page'DISEMBARKING_AT_DESTINATION_STATION 1
+     New_Page'ON_BOARD 1
+     New_Page'PASSENGER_GENERATOR 1
+     New_Page'STATION_GENERATOR 1
+     station_1'ARRIVAL_AT_THE_FIRST_STATION 1
+     station_1'DEPARTURE_FIRST_STATION 1
+     station_2'TRAIN_ARRIVAL_AT_THE_SECOND_STATION 1
+     station_2'TRAIN_LEAVES_SECOND_STATION 1
+     station_3'ARRIVAL_AT_THE_THIRD_STATION 1
+     station_3'TRAIN_LEAVES_THIRD_STATION 1
+     station_4'TRAIN_ARRIVAL_AT_THE_FOURTH_STATION 1
+     station_4'TRAIN_LEAVES_FOURTH_STATION 1
+     station_5'TRAIN_ARRIVAL_AT_THE_FIFTH_STATION 1
