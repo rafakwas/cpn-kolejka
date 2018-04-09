@@ -564,8 +564,8 @@ TRAIN</text>
                 anchor.horizontal="0"
                 anchor.vertical="0"/>
         </marking>
-        <type id="ID1417439706">
-          <posattr x="1465.000000"
+        <type id="ID1419578721">
+          <posattr x="1447.500000"
                    y="-1001.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -576,10 +576,10 @@ TRAIN</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">LIST_TRAIN_PASSENGER</text>
+                version="4.0.1">TRAIN_PASSENGER</text>
         </type>
-        <initmark id="ID1417439707">
-          <posattr x="1393.000000"
+        <initmark id="ID1419578128">
+          <posattr x="1420.000000"
                    y="-930.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -590,7 +590,7 @@ TRAIN</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">[]</text>
+                version="4.0.1"/>
         </initmark>
       </place>
       <place id="ID1417581225">
@@ -2085,8 +2085,8 @@ GENERATOR</text>
         <transend idref="ID1413766658"/>
         <placeend idref="ID1417439705"/>
         <annot id="ID1417460923">
-          <posattr x="1531.500000"
-                   y="-853.000000"/>
+          <posattr x="1444.500000"
+                   y="-859.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -2096,7 +2096,7 @@ GENERATOR</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">list_train_passenger^^[(train,(destination,passengerType))]</text>
+                version="4.0.1">(train,(destination,passengerType))</text>
         </annot>
       </arc>
       <arc id="ID1417573728"
@@ -2117,8 +2117,8 @@ GENERATOR</text>
         <transend idref="ID1417572892"/>
         <placeend idref="ID1417439705"/>
         <annot id="ID1417573729">
-          <posattr x="1199.500000"
-                   y="-1090.000000"/>
+          <posattr x="1444.500000"
+                   y="-1103.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -2128,7 +2128,7 @@ GENERATOR</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">[(train,(destination,passengerType))]</text>
+                version="4.0.1">(train,(destination,passengerType))</text>
         </annot>
       </arc>
       <arc id="ID1417587234"
@@ -3523,70 +3523,6 @@ then 1`passengerType
                     bold="false"/>
           <text tool="CPN Tools"
                 version="4.0.1">cnt</text>
-        </annot>
-      </arc>
-      <arc id="ID1419515538"
-           orientation="PtoT"
-           order="1">
-        <posattr x="0.000000"
-                 y="0.000000"/>
-        <fillattr colour="White"
-                  pattern=""
-                  filled="false"/>
-        <lineattr colour="Black"
-                  thick="1"
-                  type="Solid"/>
-        <textattr colour="Black"
-                  bold="false"/>
-        <arrowattr headsize="1.200000"
-                   currentcyckle="2"/>
-        <transend idref="ID1413766658"/>
-        <placeend idref="ID1417439705"/>
-        <annot id="ID1419515539">
-          <posattr x="1252.000000"
-                   y="-852.000000"/>
-          <fillattr colour="White"
-                    pattern="Solid"
-                    filled="false"/>
-          <lineattr colour="Black"
-                    thick="0"
-                    type="Solid"/>
-          <textattr colour="Black"
-                    bold="false"/>
-          <text tool="CPN Tools"
-                version="4.0.1">list_train_passenger</text>
-        </annot>
-      </arc>
-      <arc id="ID1419544435"
-           orientation="TtoP"
-           order="1">
-        <posattr x="0.000000"
-                 y="0.000000"/>
-        <fillattr colour="White"
-                  pattern=""
-                  filled="false"/>
-        <lineattr colour="Black"
-                  thick="1"
-                  type="Solid"/>
-        <textattr colour="Black"
-                  bold="false"/>
-        <arrowattr headsize="1.200000"
-                   currentcyckle="2"/>
-        <transend idref="ID1417572892"/>
-        <placeend idref="ID1417439705"/>
-        <annot id="ID1419544436">
-          <posattr x="1685.000000"
-                   y="-1099.000000"/>
-          <fillattr colour="White"
-                    pattern="Solid"
-                    filled="false"/>
-          <lineattr colour="Black"
-                    thick="0"
-                    type="Solid"/>
-          <textattr colour="Black"
-                    bold="false"/>
-          <text tool="CPN Tools"
-                version="4.0.1">removeFromPassengerList((train,(destination,passengerType)),list_train_passenger)</text>
         </annot>
       </arc>
       <constraints/>
@@ -8526,9 +8462,9 @@ FIRST STATION</text>
             </zorder>
           </cpnsheet>
           <cpnsheet id="ID1419383451"
-                    panx="-1498.200000"
-                    pany="-895.850000"
-                    zoom="0.800000"
+                    panx="-1750.439148"
+                    pany="-1397.434128"
+                    zoom="1.007080"
                     instance="ID2149">
             <zorder>
               <position value="0"/>
