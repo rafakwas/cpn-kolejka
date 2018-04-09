@@ -21,9 +21,6 @@
       </block>
       <block id="ID1">
         <id>Standard declarations</id>
-        <ml id="ID1419562605">fun removeFromPassengerList(train_passenger,list_train_passenger) = rm train_passenger list_train_passenger;
-          <layout>fun removeFromPassengerList(train_passenger,list_train_passenger) = rm train_passenger list_train_passenger;</layout>
-        </ml>
         <color id="ID1415214810">
           <id>COUNT</id>
           <int/>
@@ -43,13 +40,6 @@
           <int/>
           <layout>colset INT = int;</layout>
         </color>
-        <var id="ID1419344925">
-          <type>
-            <id>INT</id>
-          </type>
-          <id>cnt</id>
-          <layout>var cnt : INT;</layout>
-        </var>
         <color id="ID1412312409">
           <id>INTINF</id>
           <intinf/>
@@ -90,13 +80,6 @@
           </int>
           <layout>colset FACTOR = int with 1..2;</layout>
         </color>
-        <var id="ID1419326820">
-          <type>
-            <id>FACTOR</id>
-          </type>
-          <id>factor</id>
-          <layout>var factor : FACTOR;</layout>
-        </var>
         <color id="ID1413151850">
           <id>STATION_NUMBER</id>
           <int>
@@ -107,13 +90,6 @@
           </int>
           <layout>colset STATION_NUMBER = int with 1..6;</layout>
         </color>
-        <var id="ID1419325409">
-          <type>
-            <id>STATION_NUMBER</id>
-          </type>
-          <id>random_integer</id>
-          <layout>var random_integer : STATION_NUMBER;</layout>
-        </var>
         <color id="ID1419287882">
           <id>STATION_PAIRS_NUMBERS</id>
           <int>
@@ -124,13 +100,6 @@
           </int>
           <layout>colset STATION_PAIRS_NUMBERS = int with 0..2;</layout>
         </color>
-        <var id="ID1419289961">
-          <type>
-            <id>STATION_PAIRS_NUMBERS</id>
-          </type>
-          <id>station_pairs_numbers</id>
-          <layout>var station_pairs_numbers : STATION_PAIRS_NUMBERS;</layout>
-        </var>
         <color id="ID1413152483">
           <id>PASSENGER_TYPE</id>
           <enum>
@@ -166,13 +135,6 @@
           </bool>
           <layout>colset PERMISSION = bool with (yes,no);</layout>
         </color>
-        <var id="ID1419340232">
-          <type>
-            <id>PERMISSION</id>
-          </type>
-          <id>permission</id>
-          <layout>var permission : PERMISSION;</layout>
-        </var>
         <color id="ID1413190688">
           <id>TRAIN_STATION</id>
           <timed/>
@@ -211,21 +173,6 @@
           <id>list_train_passenger</id>
           <layout>var list_train_passenger : LIST_TRAIN_PASSENGER;</layout>
         </var>
-        <color id="ID1417664021">
-          <id>SEAT</id>
-          <enum>
-            <id>SEAT</id>
-          </enum>
-          <layout>colset SEAT = with SEAT;</layout>
-        </color>
-        <color id="ID1419564197">
-          <id>WAGON_SEAT</id>
-          <product>
-            <id>SEAT</id>
-            <id>PASSENGER_TYPE</id>
-          </product>
-          <layout>colset WAGON_SEAT = product SEAT * PASSENGER_TYPE;</layout>
-        </color>
         <var id="ID1414008161">
           <type>
             <id>TRAIN_STATION</id>
@@ -275,6 +222,41 @@
           <id>passenger</id>
           <layout>var passenger: PASSENGER;</layout>
         </var>
+        <var id="ID1419344925">
+          <type>
+            <id>INT</id>
+          </type>
+          <id>cnt</id>
+          <layout>var cnt : INT;</layout>
+        </var>
+        <var id="ID1419326820">
+          <type>
+            <id>FACTOR</id>
+          </type>
+          <id>factor</id>
+          <layout>var factor : FACTOR;</layout>
+        </var>
+        <var id="ID1419325409">
+          <type>
+            <id>STATION_NUMBER</id>
+          </type>
+          <id>random_integer</id>
+          <layout>var random_integer : STATION_NUMBER;</layout>
+        </var>
+        <var id="ID1419289961">
+          <type>
+            <id>STATION_PAIRS_NUMBERS</id>
+          </type>
+          <id>station_pairs_numbers</id>
+          <layout>var station_pairs_numbers : STATION_PAIRS_NUMBERS;</layout>
+        </var>
+        <var id="ID1419340232">
+          <type>
+            <id>PERMISSION</id>
+          </type>
+          <id>permission</id>
+          <layout>var permission : PERMISSION;</layout>
+        </var>
         <color id="ID1413153128">
           <id>Ten0</id>
           <int>
@@ -323,6 +305,9 @@ in if(result = 6) then result else result mod 6 end;</layout>
         </ml>
         <ml id="ID1413160625">fun GenPassenger(s:Ten0,r:Ten1) = (s&lt;=r);
           <layout>fun GenPassenger(s:Ten0,r:Ten1) = (s&lt;=r);</layout>
+        </ml>
+        <ml id="ID1419562605">fun removeFromPassengerList(train_passenger,list_train_passenger) = rm train_passenger list_train_passenger;
+          <layout>fun removeFromPassengerList(train_passenger,list_train_passenger) = rm train_passenger list_train_passenger;</layout>
         </ml>
       </block>
     </globbox>
@@ -1248,8 +1233,8 @@ CIRCUIT</text>
         <transend idref="ID1417572892"/>
         <placeend idref="ID1417439705"/>
         <annot id="ID1419596498">
-          <posattr x="1328.000000"
-                   y="-1120.000000"/>
+          <posattr x="1614.500000"
+                   y="-1119.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -8751,8 +8736,8 @@ SIXTH STATION</text>
     </options>
     <binders>
       <cpnbinder id="ID2222"
-                 x="581"
-                 y="70"
+                 x="557"
+                 y="61"
                  width="958"
                  height="870">
         <sheets>
@@ -8802,10 +8787,37 @@ SIXTH STATION</text>
             </zorder>
           </cpnsheet>
           <cpnsheet id="ID1419888528"
-                    panx="-63.358750"
-                    pany="-1368.005000"
+                    panx="-334.358750"
+                    pany="-1656.005000"
                     zoom="1.250000"
                     instance="ID1419753122">
+            <zorder>
+              <position value="0"/>
+            </zorder>
+          </cpnsheet>
+          <cpnsheet id="ID1419914125"
+                    panx="-917.000000"
+                    pany="-1068.000000"
+                    zoom="1.000000"
+                    instance="ID2149">
+            <zorder>
+              <position value="0"/>
+            </zorder>
+          </cpnsheet>
+          <cpnsheet id="ID1419918487"
+                    panx="-144.000000"
+                    pany="-1306.000000"
+                    zoom="1.000000"
+                    instance="ID1419753122">
+            <zorder>
+              <position value="0"/>
+            </zorder>
+          </cpnsheet>
+          <cpnsheet id="ID1419922882"
+                    panx="-862.019200"
+                    pany="-653.280000"
+                    zoom="0.640000"
+                    instance="ID2149">
             <zorder>
               <position value="0"/>
             </zorder>
@@ -8818,6 +8830,9 @@ SIXTH STATION</text>
           <position value="0"/>
           <position value="4"/>
           <position value="5"/>
+          <position value="6"/>
+          <position value="7"/>
+          <position value="8"/>
         </zorder>
       </cpnbinder>
     </binders>
@@ -8900,17 +8915,9 @@ SIXTH STATION</text>
           <IndexNode expanded="true"/>
           <IndexNode expanded="true"/>
           <IndexNode expanded="true"/>
-          <IndexNode expanded="true"/>
           <IndexNode expanded="false"/>
           <IndexNode expanded="true"/>
-          <IndexNode expanded="true"/>
           <IndexNode expanded="false"/>
-          <IndexNode expanded="true"/>
-          <IndexNode expanded="true"/>
-          <IndexNode expanded="true"/>
-          <IndexNode expanded="true"/>
-          <IndexNode expanded="true"/>
-          <IndexNode expanded="true"/>
           <IndexNode expanded="true"/>
           <IndexNode expanded="true"/>
           <IndexNode expanded="true"/>
@@ -8937,8 +8944,14 @@ SIXTH STATION</text>
           <IndexNode expanded="true"/>
           <IndexNode expanded="true"/>
           <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
           <IndexNode expanded="false"/>
           <IndexNode expanded="false"/>
+          <IndexNode expanded="true"/>
           <IndexNode expanded="true"/>
         </IndexNode>
       </IndexNode>
